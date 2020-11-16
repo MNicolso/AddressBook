@@ -128,7 +128,7 @@ namespace AddressBook.Controllers
 
 
                 var ms = new MemoryStream();
-                imageData.CopyTo(ms);
+                imageData.CopyToAsync(ms);
                 byte[] bytes = ms.ToArray();
 
                 ms.Close();
